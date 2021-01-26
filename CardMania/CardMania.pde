@@ -15,7 +15,7 @@ void setup(){
   int nyY = 15;
   int nyFs = 0;
   
-  for(int i = 0; i<16; i++){
+  for(int i = 0; i < 16; i++){
     x[i] = nyX;
     y[i] = nyY;
     fs[i] = i+1;
@@ -29,6 +29,8 @@ void setup(){
       //altså hvor højt er kortet ovenover?
     }
   }
+  
+  rystPosen();
   
   for (int i = 0; i < 16; i++){
     nyKortBunke[i] = new KortBunke (x[i], y[i], fs[i]);
@@ -53,5 +55,18 @@ void vend(){
       nyKortBunke[i].displayFront();
     
     }
+  }
+}
+
+
+void rystPosen(){
+  int test = 0;
+  int vaerdi = 0;
+  
+  for (int i = 0; i < 16; i++){
+    vaerdi = int(random(0,8));
+    test = fs[i];
+    fs[i] = fs[vaerdi];
+    fs[vaerdi] = test;
   }
 }
