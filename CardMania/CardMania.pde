@@ -9,7 +9,7 @@ int[] fs = new int[16];
 
 void setup(){
   
-  size(700, 900);
+  size(1800, 1000);
   
   int nyX = 15;
   int nyY = 15;
@@ -18,7 +18,7 @@ void setup(){
   for(int i = 0; i<16; i++){
     x[i] = nyX;
     y[i] = nyY;
-    fs[i] = i++;
+    fs[i] = i+1;
     
     if(nyX < 345){
       nyX += 115;
@@ -48,9 +48,10 @@ void draw(){
 }
 
 void vend(){
-  for (int = 0; i < 16; i++){
-    if (mouseX > x[i] && mouseX < (x[i] + 105) && mouseY > y[i] && mouseY < (y[i]+140){
-      nyKortBunke[i].displayFrontSide();
+  for (int i = 0; i < 16; i++){
+    if (mouseX > x[i] && mouseX < (x[i] + 105) && mouseY > y[i] && mouseY < (y[i]+140)){
+      nyKortBunke[i].displayFront();
+    
     }
   }
 }
