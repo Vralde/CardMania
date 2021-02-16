@@ -23,4 +23,13 @@ class KortBunke{
     vis = frontSide;
   }
   
+  void bagSideOpad(){
+    vis = 0;
+  }
+  
+  void stik(){
+    println("stik");
+    kortX = -1000; 
+  }
+  
 }
