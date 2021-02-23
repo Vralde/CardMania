@@ -54,3 +54,17 @@ K3) Spillet skal have en transition mellem hvert stik eller hvert umatchet par, 
 K4) spillet skal have en detaljeret side der viser om spilleren har vundet eller tabt, med et mere farverigt motiv.
 ```
 ## Teknisk beskrivelse
+Her er beskrivelserne af det tekniske bag programmet.
+```
+Spillet bygger på en gruppe af kort, en bunke. I denne "bunke" er der 16 kort, 8 slags og 2 af hver. I selve koden, udnyttes disse, vha masser af små statements og funktioner,
+bliver disse kort blandet, og brugt til at spille et memory spil, hvor man skal matche kort af samme slags.
+
+Kortene, som hører under kort bunken, bliver brugt som en klasse, hvori der findes data til hvert kort, samt funktioner, der så kan blive "kaldt" i "hovedkoden".
+
+Selve koden til spillet, kan virke som en flowchart. Når programmet startes, giver den kortene værdier og placeringer. Den ligger hvert kort et bestemt stykke fra de tidligere
+medmindre kortet ikke ville være indenfor en grænse, hvorefter den så ville rykke kortet ned på næste "linje". Derefter kan man klikke på et kort, hvor koden først tjekker,
+om man allerede har valgt 2, hvis ikke, tjekker den om man allerede har valgt det kort man er ved at trykke på. Hvis ingen af de to undtagelser træder i kraft, bliver kortet
+vendt. Når spilleren har vendt to kort med samme værdi (som er vist ved kortets billede), bliver kortene fjernet. Herefter tjekker koden, om spilleren har fjernet alle (8) par,
+hvis man har, har man vundet. Og det er essensen bag koden.
+
+Mere dybdegående beskrivelser af hvert bemærkelsesværdigt stykke kode, findes som skrift i selve kode dokumentet, da det forklarer de små stykker kode.
