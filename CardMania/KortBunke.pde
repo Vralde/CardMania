@@ -11,6 +11,7 @@ class KortBunke{
     kortX = x;
     kortY = y;
     frontSide = fs;
+    //Hvilke værdier kortene skal kunne bruge.
   }
   
   void display(){
