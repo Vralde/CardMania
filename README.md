@@ -26,7 +26,7 @@ K9) Man kan ikke tabe.
 K10) Man spiller med sig selv.
 ```
 
-## Til spillet har gruppen også lavet nogle designmæssige krav
+## Designmæssige krav
 
 Siden selve spillets mekanik vægtes højere end designet, har gruppen opdelt disse krav i "need-to-have" og "nice-to-have". 
 
